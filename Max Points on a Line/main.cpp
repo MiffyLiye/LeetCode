@@ -50,7 +50,7 @@ struct Line {
 };
 
 struct Less {
-    bool operator() (Point a, Point b) {
+    bool operator() (const Point& a, const Point& b) {
         if (a.x != b.x) {
             return a.x < b.x;
         }
@@ -58,7 +58,7 @@ struct Less {
             return a.y < b.y;
         }
     }
-    bool operator() (Line x, Line y) {
+    bool operator() (const Line& x, const Line& y) {
         if (x.a_ != y.a_) {
             return x.a_ < y.a_;
         }
@@ -98,10 +98,9 @@ private:
             }
         }
 
-        if (m.find(Line{}) != m.end()) {
-            if (m.size() > 1) {
-                m.at(Line{}).clear();
-            }
+        Line singular_line {};
+        if (m.find(singular_line) != m.end() && m.size() > 1) {
+            m.at(singular_line).clear();
         }
 
         Line opt_line;
@@ -119,7 +118,7 @@ private:
 int main()
 {
     Solution x;
-    vector<Point> points {{0,0},{0,1},{1,0},{1,1},{2,2}};
+    vector<Point> points {{0,0},{0,1},{1,0},{1,1},{1,1}};
 
     cout << x.maxPoints(points) << endl;
     return 0;
