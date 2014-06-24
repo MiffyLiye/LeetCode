@@ -15,14 +15,14 @@ public:
         }
         else {
             auto value = data[key].value;
-            modify(key, value);
+            modify(data.find(key), value);
             return value;
         }
     }
     
     void set(int key, int value) {
         if (data.find(key) != data.end()) {
-            modify(key, value);
+            modify(data.find(key), value);
         }
         else {
             insert(key, value);
@@ -39,7 +39,7 @@ private:
     int youngest;
     int oldest;
 
-    void insert(int key, int value) {
+    inline void insert(int key, int value) {
         if (data.size() == capacity) {
             pop();
         }
@@ -55,30 +55,32 @@ private:
         }
     }
 
-    void modify(int key, int value) {
-        data[key].value = value;
+    inline void modify(unordered_map<int, Node>::iterator i, int value) {
+        auto key = i->first;
+        auto& node = i->second;
+        node.value = value;
         if (key == youngest) {
             ;
         }
         else if (key == oldest) {
-            oldest = data[key].younger;
+            oldest = node.younger;
             data[oldest].older = oldest;            
             data[youngest].younger = key;
-            data[key].older = youngest;
-            data[key].younger = key;
+            node.older = youngest;
+            node.younger = key;
             youngest = key;
         }
         else {
-            data[data[key].older].younger = data[key].younger;
-            data[data[key].younger].older = data[key].older;
+            data[node.older].younger = node.younger;
+            data[node.younger].older = node.older;
             data[youngest].younger = key;
-            data[key].younger = key;
-            data[key].older = youngest;
+            node.younger = key;
+            node.older = youngest;
             youngest = key;
         }
     }
 
-    void pop() {
+    inline void pop() {
         auto key = oldest;
         oldest = data[key].younger;
         data[oldest].older = oldest;
@@ -88,21 +90,13 @@ private:
 
 int main()
 {
-    LRUCache x(3);
-    x.set(1,1);
+    LRUCache x(2);
+    x.set(2,1);
     x.set(2,2);
-    x.set(3,3);
-    x.set(4,4);
-    cout << x.get(4) << '\t';
-    cout << x.get(3) << '\t';
     cout << x.get(2) << '\t';
-    cout << x.get(1) << '\t';
-    x.set(5,5);
-    cout << x.get(1) << '\t';
+    x.set(1,1);
+    x.set(4,1);
     cout << x.get(2) << '\t';
-    cout << x.get(3) << '\t';
-    cout << x.get(4) << '\t';
-    cout << x.get(5) << '\t';
     cout << '\n';
 
     return 0;

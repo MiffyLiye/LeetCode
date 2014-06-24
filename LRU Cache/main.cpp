@@ -19,14 +19,14 @@ public:
         }
         else {
             auto value = data[key];
-            modify(key, value);
+            modify(data.find(key), value);
             return value;
         }
     }
     
     void set(int key, int value) {
         if (data.find(key) != data.end()) {
-            modify(key, value);
+            modify(data.find(key), value);
         }
         else {
             insert(key, value);
@@ -40,7 +40,7 @@ private:
     unordered_map<int, clock_t_> key_time;
     map<clock_t_, int> time_key;
 
-    void reset_clock() {
+    inline void reset_clock() {
         map<clock_t_, int> time_key_new;
         clock_t_ clock = 0;
         while (time_key.size() != 0) {
@@ -53,8 +53,9 @@ private:
         time_key.swap(time_key_new);
     }
 
-    void modify(int key, int value) {
-        data[key] = value;
+    inline void modify(unordered_map<int, int>::iterator i, int value) {
+        auto key = i->first;
+        i->second = value;
         time_key.erase(time_key.find(key_time[key]));
         key_time[key] = clock;
         time_key.insert(pair<clock_t_, int>(clock, key));
@@ -66,7 +67,7 @@ private:
         }
     }
 
-    int pop() {
+    inline int pop() {
         auto i = time_key.begin();
         auto time = i->first;
         auto key = i->second;
@@ -78,7 +79,7 @@ private:
         return key;
     }
 
-    void insert(int key, int value) {
+    inline void insert(int key, int value) {
         if (sz == capacity) {
             pop();
         }
