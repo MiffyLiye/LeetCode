@@ -57,7 +57,9 @@ private:
         time_key.erase(time_key.find(key_time[key]));
         key_time[key] = clock;
         time_key.insert(pair<clock_t_, int>(clock, key));
+
         clock++;
+        
         if (clock == numeric_limits<clock_t_>::max()) {
             reset_clock();
         }
@@ -82,8 +84,13 @@ private:
         data.insert(pair<int, int>(key, value));
         key_time.insert(pair<int, clock_t_>(key, clock));
         time_key.insert(pair<clock_t_, int>(clock, key));
+
         clock++;
         sz++;
+
+        if (clock == numeric_limits<clock_t_>::max()) {
+            reset_clock();
+        }
     }
 };
 
