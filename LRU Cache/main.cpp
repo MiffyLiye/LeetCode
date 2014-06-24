@@ -1,4 +1,5 @@
 #include<iostream>
+#include<unordered_map>
 #include<map>
 #include<limits>
 
@@ -35,8 +36,8 @@ private:
     int capacity;
     int sz;
     clock_t_ clock;
-    map<int, int> data;
-    map<int, clock_t_> key_time;
+    unordered_map<int, int> data;
+    unordered_map<int, clock_t_> key_time;
     map<clock_t_, int> time_key;
 
     void reset_clock() {
