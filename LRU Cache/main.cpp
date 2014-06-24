@@ -3,7 +3,9 @@
 #include<limits>
 
 using namespace std;
-using clock_t_ = size_t;
+using clock_t_ = unsigned int;
+static_assert(numeric_limits<clock_t_>::max() >= numeric_limits<int>::max(), "clock range not large enough");
+
 class LRUCache{
 public:
     LRUCache(int capacity_) : capacity {capacity_}, sz {0}, clock {0}, data {}, key_time {}, time_key{} {
@@ -87,13 +89,15 @@ private:
 
 int main()
 {
+    cout << numeric_limits<clock_t_>::max() << '\n';
     LRUCache x(2);
     x.set(2,1);
     x.set(1,1);
-    cout << x.get(2) << endl;
+    cout << x.get(2) << '\t';
     x.set(4,1);
-    cout << x.get(1) << endl;
-    cout << x.get(2) << endl;
+    cout << x.get(1) << '\t';
+    cout << x.get(2) << '\t';
+    cout << '\n';
 
     return 0;
 }
