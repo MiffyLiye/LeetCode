@@ -8,20 +8,22 @@ public:
     bool isPalindrome(int x) {
         return is_palindrome(x);
     }
-    Solution () : head_ {1} {
-        for (int i = 0; i < numeric_limits<int>::digits10; i++) {
-            head_ *= 10;
-        }
-    }
 private:
-    int head_;
+    constexpr int pow(int base, int exp) {
+        return exp > 0 ? base * pow(base, exp - 1) : 1;
+    }
+
+    int max_head() {
+        static int head {pow(10, numeric_limits<int>::digits10)};
+        return head;
+    }
 
     bool is_palindrome(int x) {
         if (x < 0) {
             return false;
         }
 
-        int head = head_;
+        int head = max_head();
         int tail = 1;
 
         while (head > 1 && ((x / head) % 10) == 0) {
