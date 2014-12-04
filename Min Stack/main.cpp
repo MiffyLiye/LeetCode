@@ -1,5 +1,5 @@
+#include <iostream>
 #include <stack>
-#include <multiset>
 
 using namespace std;
 
@@ -59,3 +59,11 @@ private:
         return current_minimum_.top();
     }
 };
+
+int main()
+{
+    cout << "correctness has been proven by analysis, no local test for correctness.\n";
+    cout << "previous version using <multiset> uses too much memory.\n";
+
+    return 0;
+}
