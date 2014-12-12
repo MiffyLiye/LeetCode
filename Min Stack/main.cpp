@@ -62,8 +62,7 @@ private:
 
 int main()
 {
-    cout << "correctness has been proven by analysis, no local test for correctness.\n";
-    cout << "previous version using <multiset> uses too much memory.\n";
+    cout << "correctness has been proved by analysis, no local test for correctness.\n";
 
     return 0;
 }
