@@ -20,6 +20,7 @@ set(SOURCE_FILES
         17.Letter_Combinations_of_a_Phone_Number/code.cpp 17.Letter_Combinations_of_a_Phone_Number/code.h
         18.4Sum/code.cpp 18.4Sum/code.h
         19.Remove_Nth_Node_From_End_of_List/code.cpp 19.Remove_Nth_Node_From_End_of_List/code.h
+        20.Valid_Parentheses/code.cpp 20.Valid_Parentheses/code.h
         134.Gas_Station/code.cpp 134.Gas_Station/code.h
         135.Candy/code.cpp 135.Candy/code.h
         136.Single_Number/code.cpp 136.Single_Number/code.h
