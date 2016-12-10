@@ -19,6 +19,7 @@ set(SOURCE_FILES
         16.3Sum_Closest/code.cpp 16.3Sum_Closest/code.h
         17.Letter_Combinations_of_a_Phone_Number/code.cpp 17.Letter_Combinations_of_a_Phone_Number/code.h
         18.4Sum/code.cpp 18.4Sum/code.h
+        19.Remove_Nth_Node_From_End_of_List/code.cpp 19.Remove_Nth_Node_From_End_of_List/code.h
         134.Gas_Station/code.cpp 134.Gas_Station/code.h
         135.Candy/code.cpp 135.Candy/code.h
         136.Single_Number/code.cpp 136.Single_Number/code.h
@@ -40,6 +41,6 @@ set(SOURCE_FILES
         152.Maximum_Product_Subarray/code.cpp 152.Maximum_Product_Subarray/code.h
         153.Find_Minimum_in_Rotated_Sorted_Array/code.cpp 153.Find_Minimum_in_Rotated_Sorted_Array/code.h
         154.Find_Minimum_in_Rotated_Sorted_Array_II/code.cpp 154.Find_Minimum_in_Rotated_Sorted_Array_II/code.h
-        155.Min_Stack/code.hpp)
-
+        155.Min_Stack/code.hpp
+        )
 add_library(LeetCodeLib ${SOURCE_FILES})

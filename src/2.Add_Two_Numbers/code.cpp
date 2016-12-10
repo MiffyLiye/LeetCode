@@ -64,10 +64,6 @@ namespace Add_Two_Numbers
         else
         {
             current->next = new ListNode(carry);
-            if (current->next == nullptr)
-            {
-                throw;
-            }
             return a;
         }
     }

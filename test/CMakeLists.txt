@@ -23,6 +23,7 @@ set(TEST_SOURCE_FILES
         16.3Sum_Closest/test.cpp
         17.Letter_Combinations_of_a_Phone_Number/test.cpp
         18.4Sum/test.cpp
+        19.Remove_Nth_Node_From_End_of_List/test.cpp
         134.Gas_Station/test.cpp
         135.Candy/test.cpp
         136.Single_Number/test.cpp
@@ -44,7 +45,8 @@ set(TEST_SOURCE_FILES
         152.Maximum_Product_Subarray/test.cpp
         153.Find_Minimum_in_Rotated_Sorted_Array/test.cpp
         154.Find_Minimum_in_Rotated_Sorted_Array_II/test.cpp
-        155.Min_Stack/test.cpp)
+        155.Min_Stack/test.cpp
+        )
 
 add_executable(LeetCodeTest ${TEST_SOURCE_FILES})
 
