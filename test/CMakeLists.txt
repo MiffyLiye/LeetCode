@@ -25,6 +25,7 @@ set(TEST_SOURCE_FILES
         18.4Sum/test.cpp
         19.Remove_Nth_Node_From_End_of_List/test.cpp
         20.Valid_Parentheses/test.cpp
+        21.Merge_Two_Sorted_Lists/test.cpp
         134.Gas_Station/test.cpp
         135.Candy/test.cpp
         136.Single_Number/test.cpp
