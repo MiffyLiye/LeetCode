@@ -1,0 +1,10 @@
+version: 1.0.{build}
+
+configuration: Release
+
+build_script:
+- ps: cmake .
+- ps: msbuild  /property:Configuration=Release .\LeetCode.sln
+
+test_script:
+- ps: ctest -C Release -VV
