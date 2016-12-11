@@ -1,6 +1,9 @@
 #include "code.h"
 #include <map>
 #include <set>
+#include <limits>
+#include <string>
+#include <stdexcept>
 
 using namespace std;
 
@@ -85,10 +88,16 @@ namespace Max_Points_on_a_Line
 
     int max_points_ordered(vector<Point>& points)
     {
-        map<Line, set<size_t>, Less> m;
-        for (size_t x = 0; x != points.size(); x++)
+        auto int_max = numeric_limits<unsigned int>::max() / 2;
+        if (points.size() > int_max)
         {
-            for (size_t y = x + 1; y != points.size(); y++)
+            throw runtime_error("cannot support points number that is longer than " + to_string(int_max));
+        }
+
+        map<Line, set<size_t>, Less> m;
+        for (auto x = 0u; x != points.size(); x++)
+        {
+            for (auto y = x + 1; y != points.size(); y++)
             {
                 Line line(points[x], points[y]);
                 if (m.find(line) == m.end())
@@ -116,7 +125,7 @@ namespace Max_Points_on_a_Line
                 count = x.second.size();
             }
         }
-        return count;
+        return static_cast<int>(count);
     }
 
     int Solution::maxPoints(vector<Point>& points)
@@ -127,7 +136,7 @@ namespace Max_Points_on_a_Line
         }
         else if (points.size() == 1)
         {
-            return points.size();
+            return static_cast<int>(points.size());
         }
         else
         {

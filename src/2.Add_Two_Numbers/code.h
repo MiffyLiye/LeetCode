@@ -2,8 +2,6 @@
 
 namespace Add_Two_Numbers
 {
-    using namespace std;
-
     struct ListNode
     {
         int val;

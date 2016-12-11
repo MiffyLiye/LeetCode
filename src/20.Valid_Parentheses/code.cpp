@@ -16,12 +16,12 @@ namespace Valid_Parentheses
     bool is_right_parenthesis(char c)
     {
         return right_left_parentheses_map.find(c) != right_left_parentheses_map.end();
-    };
+    }
 
     char get_left_part(char c)
     {
         return right_left_parentheses_map.find(c)->second;
-    };
+    }
 
     bool Solution::isValid(std::string s)
     {

@@ -1,6 +1,9 @@
 #pragma once
 
 #include <unordered_map>
+#include <limits>
+#include <stdexcept>
+#include <string>
 
 namespace LRU_Cache
 {
@@ -77,7 +80,13 @@ namespace LRU_Cache
     public:
         LRUCache(int capacity_) : capacity{0}, data{}, youngest{}, oldest{}
         {
-            capacity = capacity_ < 0 ? 0 : capacity_;
+            auto capacity_max = std::numeric_limits<size_t>::max();
+            if (capacity_ < 0 || static_cast<unsigned int>(capacity_) > capacity_max)
+            {
+                throw std::runtime_error("cannot support capacity that is longer than " + std::to_string(capacity_max));
+            }
+
+            capacity = capacity_ < 0 ? 0u : static_cast<size_t>(capacity_);
         }
 
         int get(int key)

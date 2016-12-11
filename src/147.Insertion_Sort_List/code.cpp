@@ -54,4 +54,4 @@ namespace Insertion_Sort_List
     {
         return insertion_sort_list(head);
     }
-};
+}

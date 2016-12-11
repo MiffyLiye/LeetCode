@@ -10,25 +10,25 @@ namespace Two_Sum
 {
     vector<int> get_index(vector<int>& numbers, int x, int y)
     {
-        auto int_max = numeric_limits<int>::max();
-        if (numbers.size() > static_cast<size_t>(int_max))
+        auto int_max = numeric_limits<unsigned int>::max() / 2;
+        if (numbers.size() > int_max)
         {
             throw runtime_error(string{"cannot support vector that is longer than " + to_string(int_max)});
         }
 
         vector<int> index{0, 0};
         vector<bool> is_done{false, false};
-        for (auto i = 0; i < static_cast<int>(numbers.size()) && (!is_done[0] || !is_done[1]); i++)
+        for (auto i = 0u; i < numbers.size() && (!is_done[0] || !is_done[1]); i++)
         {
             if (!is_done[0] && numbers[i] == x)
             {
-                index[0] = i;
+                index[0] = static_cast<int>(i);
                 is_done[0] = true;
                 continue;
             }
             else if (!is_done[1] && numbers[i] == y)
             {
-                index[1] = i;
+                index[1] = static_cast<int>(i);
                 is_done[1] = true;
                 continue;
             }
@@ -47,6 +47,12 @@ namespace Two_Sum
 
     vector<int> two_sum(vector<int>& numbers, int target)
     {
+        auto int_max = numeric_limits<unsigned int>::max() / 2;
+        if (numbers.size() > int_max)
+        {
+            throw runtime_error(string{"cannot support vector that is longer than " + to_string(int_max)});
+        }
+
         set<int> s;
         vector<int> index{0, 0};
         for (auto x:numbers)

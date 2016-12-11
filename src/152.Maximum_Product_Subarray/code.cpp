@@ -60,16 +60,16 @@ namespace Maximum_Product_Subarray
             return A[0];
         }
 
-        size_t sz = n;
+        size_t sz = static_cast<size_t>(n);
 
         vector<double> prod(sz);
-        for (size_t i = 0; i < sz; i++) {
+        for (auto i = 0u; i < sz; i++) {
             prod[i] = n;
         }
 
         double maximum = prod[0];
-        for (size_t i = 1; i < sz; i++) {
-            for (size_t t = 1; t <= i; t++) {
+        for (auto i = 1u; i < sz; i++) {
+            for (auto t = 1u; t <= i; t++) {
                 auto j = i - t;
                 prod[j] = prod[j] * n;
                 maximum = (maximum < prod[j]) ? prod[j] : maximum;
