@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/4.Median_of_Two_Sorted_Arrays/code.h"
+#include "catch/catch.hpp"
+#include "4.Median_of_Two_Sorted_Arrays/code.h"
 
 using namespace std;
 using namespace Median_of_Two_Sorted_Arrays;

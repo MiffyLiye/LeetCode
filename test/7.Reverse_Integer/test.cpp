@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/7.Reverse_Integer/code.h"
+#include "catch/catch.hpp"
+#include "7.Reverse_Integer/code.h"
 
 using namespace std;
 using namespace Reverse_Integer;

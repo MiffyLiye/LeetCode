@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/3.Longest_Substring_Without_Repeating_Characters/code.h"
+#include "catch/catch.hpp"
+#include "3.Longest_Substring_Without_Repeating_Characters/code.h"
 
 using namespace std;
 using namespace Longest_Substring_Without_Repeating_Characters;

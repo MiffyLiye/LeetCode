@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/2.Add_Two_Numbers/code.h"
+#include "catch/catch.hpp"
+#include "2.Add_Two_Numbers/code.h"
 
 using namespace std;
 using namespace Add_Two_Numbers;

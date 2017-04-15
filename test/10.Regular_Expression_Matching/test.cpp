@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/10.Regular_Expression_Matching/code.h"
+#include "catch/catch.hpp"
+#include "10.Regular_Expression_Matching/code.h"
 
 using namespace std;
 using namespace Regular_Expression_Matching;

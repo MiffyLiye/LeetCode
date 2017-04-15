@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/146.LRU_Cache/code.hpp"
+#include "catch/catch.hpp"
+#include "146.LRU_Cache/code.hpp"
 
 using namespace std;
 using namespace LRU_Cache;

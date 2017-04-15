@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/134.Gas_Station/code.h"
+#include "catch/catch.hpp"
+#include "134.Gas_Station/code.h"
 
 using namespace std;
 using namespace Gas_Station;

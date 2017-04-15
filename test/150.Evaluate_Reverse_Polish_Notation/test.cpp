@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/150.Evaluate_Reverse_Polish_Notation/code.h"
+#include "catch/catch.hpp"
+#include "150.Evaluate_Reverse_Polish_Notation/code.h"
 
 using namespace std;
 using namespace Evaluate_Reverse_Polish_Notation;

@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/12.Integer_to_Roman/code.h"
+#include "catch/catch.hpp"
+#include "12.Integer_to_Roman/code.h"
 
 using namespace std;
 using namespace Integer_to_Roman;

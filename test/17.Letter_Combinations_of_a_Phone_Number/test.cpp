@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/17.Letter_Combinations_of_a_Phone_Number/code.h"
+#include "catch/catch.hpp"
+#include "17.Letter_Combinations_of_a_Phone_Number/code.h"
 
 using namespace std;
 using namespace Letter_Combinations_of_a_Phone_Number;

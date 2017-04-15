@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/5.Longest_Palindromic_Substring/code.h"
+#include "catch/catch.hpp"
+#include "5.Longest_Palindromic_Substring/code.h"
 
 using namespace std;
 using namespace Longest_Palindromic_Substring;

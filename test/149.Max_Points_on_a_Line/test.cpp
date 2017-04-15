@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/149.Max_Points_on_a_Line/code.h"
+#include "catch/catch.hpp"
+#include "149.Max_Points_on_a_Line/code.h"
 
 using namespace std;
 using namespace Max_Points_on_a_Line;

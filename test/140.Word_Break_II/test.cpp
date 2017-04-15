@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/140.Word_Break_II/code.h"
+#include "catch/catch.hpp"
+#include "140.Word_Break_II/code.h"
 
 #include <algorithm>
 

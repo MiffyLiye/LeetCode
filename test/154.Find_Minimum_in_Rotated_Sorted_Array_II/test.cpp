@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/154.Find_Minimum_in_Rotated_Sorted_Array_II/code.h"
+#include "catch/catch.hpp"
+#include "154.Find_Minimum_in_Rotated_Sorted_Array_II/code.h"
 
 using namespace std;
 using namespace Find_Minimum_in_Rotated_Sorted_Array_II;

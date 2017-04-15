@@ -3,6 +3,9 @@ project(LeetCode)
 # include test framework headers
 include_directories(${PROJECT_SOURCE_DIR}/../include)
 
+# include src files
+include_directories(${PROJECT_SOURCE_DIR}/../src)
+
 set(TEST_SOURCE_FILES
         main.cpp
         1.Two_Sum/test.cpp

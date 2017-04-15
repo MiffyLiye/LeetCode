@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/16.3Sum_Closest/code.h"
+#include "catch/catch.hpp"
+#include "16.3Sum_Closest/code.h"
 
 using namespace std;
 using namespace Three_Sum_Closest;

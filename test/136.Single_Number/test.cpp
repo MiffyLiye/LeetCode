@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/136.Single_Number/code.h"
+#include "catch/catch.hpp"
+#include "136.Single_Number/code.h"
 
 using namespace std;
 using namespace Single_Number;

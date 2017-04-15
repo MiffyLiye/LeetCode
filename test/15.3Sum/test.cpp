@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/15.3Sum/code.h"
+#include "catch/catch.hpp"
+#include "15.3Sum/code.h"
 
 using namespace std;
 using namespace Three_Sum;

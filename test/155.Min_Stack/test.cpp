@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/155.Min_Stack/code.hpp"
+#include "catch/catch.hpp"
+#include "155.Min_Stack/code.hpp"
 
 using namespace std;
 using namespace Min_Stack;

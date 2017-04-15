@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/145.Binary_Tree_Postorder_Traversal/code.h"
+#include "catch/catch.hpp"
+#include "145.Binary_Tree_Postorder_Traversal/code.h"
 
 using namespace std;
 using namespace Binary_Tree_Postorder_Traversal;

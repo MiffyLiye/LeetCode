@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/135.Candy/code.h"
+#include "catch/catch.hpp"
+#include "135.Candy/code.h"
 
 using namespace std;
 using namespace Candy;

@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/20.Valid_Parentheses/code.h"
+#include "catch/catch.hpp"
+#include "20.Valid_Parentheses/code.h"
 
 using namespace std;
 using namespace Valid_Parentheses;

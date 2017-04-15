@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/8.String_to_Integer_atoi/code.h"
+#include "catch/catch.hpp"
+#include "8.String_to_Integer_atoi/code.h"
 
 using namespace std;
 using namespace String_to_Integer_atoi;

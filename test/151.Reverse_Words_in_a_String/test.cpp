@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/151.Reverse_Words_in_a_String/code.h"
+#include "catch/catch.hpp"
+#include "151.Reverse_Words_in_a_String/code.h"
 
 using namespace std;
 using namespace Reverse_Words_in_a_String;

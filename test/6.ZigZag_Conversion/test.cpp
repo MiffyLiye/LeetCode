@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/6.ZigZag_Conversion/code.h"
+#include "catch/catch.hpp"
+#include "6.ZigZag_Conversion/code.h"
 
 using namespace std;
 using namespace ZigZag_Conversion;

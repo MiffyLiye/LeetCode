@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/19.Remove_Nth_Node_From_End_of_List/code.h"
+#include "catch/catch.hpp"
+#include "19.Remove_Nth_Node_From_End_of_List/code.h"
 #include <vector>
 
 using namespace std;

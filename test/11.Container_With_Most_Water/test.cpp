@@ -1,7 +1,7 @@
 
 
-#include "../include/catch.hpp"
-#include "../../src/11.Container_With_Most_Water/code.h"
+#include "catch/catch.hpp"
+#include "11.Container_With_Most_Water/code.h"
 
 using namespace std;
 using namespace Container_With_Most_Water;

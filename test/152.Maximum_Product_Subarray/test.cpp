@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/152.Maximum_Product_Subarray/code.h"
+#include "catch/catch.hpp"
+#include "152.Maximum_Product_Subarray/code.h"
 
 using namespace std;
 using namespace Maximum_Product_Subarray;

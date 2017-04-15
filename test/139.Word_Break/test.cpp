@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/139.Word_Break/code.h"
+#include "catch/catch.hpp"
+#include "139.Word_Break/code.h"
 
 using namespace std;
 using namespace Word_Break;

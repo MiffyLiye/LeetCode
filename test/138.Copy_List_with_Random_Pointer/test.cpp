@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/138.Copy_List_with_Random_Pointer/code.h"
+#include "catch/catch.hpp"
+#include "138.Copy_List_with_Random_Pointer/code.h"
 
 using namespace std;
 using namespace Copy_List_with_Random_Pointer;

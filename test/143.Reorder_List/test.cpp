@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/143.Reorder_List/code.h"
+#include "catch/catch.hpp"
+#include "143.Reorder_List/code.h"
 
 using namespace std;
 using namespace Reorder_List;

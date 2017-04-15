@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/14.Longest_Common_Prefix/code.h"
+#include "catch/catch.hpp"
+#include "14.Longest_Common_Prefix/code.h"
 
 using namespace std;
 using namespace Longest_Common_Prefix;

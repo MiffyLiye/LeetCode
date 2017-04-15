@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/148.Sort_List/code.h"
+#include "catch/catch.hpp"
+#include "148.Sort_List/code.h"
 
 using namespace std;
 using namespace Sort_List;

@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/21.Merge_Two_Sorted_Lists/code.h"
+#include "catch/catch.hpp"
+#include "21.Merge_Two_Sorted_Lists/code.h"
 
 using namespace std;
 using namespace Merge_Two_Sorted_Lists;

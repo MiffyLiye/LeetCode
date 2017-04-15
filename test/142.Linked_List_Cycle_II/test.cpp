@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/142.Linked_List_Cycle_II/code.h"
+#include "catch/catch.hpp"
+#include "142.Linked_List_Cycle_II/code.h"
 
 using namespace std;
 using namespace Linked_List_Cycle_II;

@@ -1,5 +1,5 @@
-#include "../include/catch.hpp"
-#include "../../src/9.Palindrome_Number/code.h"
+#include "catch/catch.hpp"
+#include "9.Palindrome_Number/code.h"
 
 using namespace std;
 using namespace Palindrome_Number;
